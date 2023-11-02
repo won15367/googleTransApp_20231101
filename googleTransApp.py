@@ -4,7 +4,6 @@ from PyQt5 import uic  # QTdesiner에서 만든 ui룰 불러와주는 클래스
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QIcon
 
-
 form_class = uic.loadUiType("ui/transUI.ui")[0]
 
 
@@ -17,7 +16,7 @@ class GoogleTrans(QMainWindow, form_class):
         self.statusBar().showMessage('Google Trans App v1.0')
 
         self.btn_trans.clicked.connect(self.trans_function)  # 시그널 슬롯
-        self.btn_clear.clicked.connect(self.clear_function)
+        self.btn_clear.clicked.connect(self.clear_function)  # 시그널 슬롯
 
     def trans_function(self):
         trans_kor = self.input_kor.text()  # input_kor에 입력된 내용을 가죠온다.
