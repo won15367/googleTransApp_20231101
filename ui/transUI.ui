@@ -159,7 +159,7 @@
      <string notr="true">border: groove; border-width:2</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_reset">
+   <widget class="QPushButton" name="btn_clear">
     <property name="geometry">
      <rect>
       <x>230</x>
